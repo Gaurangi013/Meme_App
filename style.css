@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.meme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.meme-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.meme-card:hover {
+    transform: scale(1.05);
+}
+
+.meme-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.meme-card-title {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 50px;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+}
